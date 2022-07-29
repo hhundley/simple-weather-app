@@ -1,0 +1,85 @@
+body {
+    background-image: url("../Pictures/ken-cheung-KonWFWUaAuk-unsplash.jpg");
+    background-size: cover;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+h1 {
+    color: white;
+}
+
+button {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    border-style: initial;
+    background-color: rgb(241, 106, 106);
+    padding: 5px;
+}
+
+input {
+    color:rgb(23, 22, 22);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+}
+
+h3 {
+    color: white;
+    padding:10px;
+    font-weight: bold;
+}
+
+h4 {
+    color:white;
+    padding: 20px;
+}
+
+.fiveDay {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color:rgba(0, 0, 0, 0.5) ;
+    height: 300px;
+    width: 200px;
+    margin:15px;
+    border-radius: 5px;
+}
+
+.cityButton {
+    background-color: rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    margin-left: 0px;
+    color: white;
+    font-size: 10px;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.searchArea.jumbotron {
+   padding-top: 5px;
+   margin-top: 10px;
+   background-color: transparent;
+}
+
+.currentConditions {
+    opacity: 1;
+}
+
+.conditions {
+    padding: 12px;
+}

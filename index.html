@@ -25,6 +25,72 @@
 
   <body>
 
+    <header class="jumbotron">
+      <div class = "row currentInfo">
+        <div class = "col-6">
+          <h1 class="display-4 currentCity"></h1>
+          <h1 id="currentDay" class="display-5"></h1>
+        </div>
+        <div class = "col-3">
+          <h1 id="currentTemp" class="display-5 conditions"></h1>
+          <h1 id="currentWind" class="display-5 conditions"></h1>
+        </div>
+        <div class = "col-3">
+          <h1 id="currentHumidity" class="display-5 conditions"></h1>
+          <h1 id="currentUV" class="display-5 conditions"></h1>
+        </div>
+      </div>
+    </header>
+
+    <div class = row search-and-forecast>
+      <div class = "col-2 jumbotron searchArea">
+        <input id = "getCity" type="text" placeholder="Enter a city">
+        <button id = "searchButton">Search</button>
+        <hr>
+        <h2>Recents:</h2>
+        <ul>
+          <li><button class = "cityButton">Omaha</button></li>
+          <li><button class = "cityButton">New York</button></li>
+          <li><button class = "cityButton">New Orleans</button></li>
+          <li><button class = "cityButton">Salt Lake City</button></li>
+          <li><button class = "cityButton">Chicago</button></li>
+        </ul>
+      </div>
+      <div class = "col-10 fiveDay">
+        <div class = "container" id = "day1">
+            <h3 id = "date1">7/29/22 <i class = "far fa-sun" id = "weatherIcon"></i></h3>
+            <h4 id = day1Temp>Temp:</h4>
+            <h4 id = day1Wind>Wind:</h4>
+            <h4 id = day1Humid>Humidity:</h4>
+        </div>
+        <div class = "container" id = "day2">
+          <h3 id = "date2">7/30/22 <i class = "fas fa-cloud-showers-heavy" id = "weatherIcon"></i></h3>
+          <h4 id = day2Temp>Temp:</h4>
+          <h4 id = day2Wind>Wind:</h4>
+          <h4 id = day2Humid>Humidity:</h4>
+        </div>
+        <div class = "container" id = "day3">
+          <h3 id = "date3">7/31/22 <i class = "far fa-sun" id = "weatherIcon"></i></h3>
+          <h4 id = day3Temp>Temp:</h4>
+          <h4 id = day3Wind>Wind:</h4>
+          <h4 id = day3Humid>Humidity:</h4>
+        </div>
+        <div class = "container" id = "day4">
+          <h3 id = "date4">8/1/22 <i class = "far fa-sun" id = "weatherIcon"></i></h3>
+          <h4 id = day4Temp>Temp:</h4>
+          <h4 id = day4Wind>Wind:</h4>
+          <h4 id = day4Humid>Humidity:</h4>
+        </div>
+        <div class = "container" id = "day5">
+          <h3 id = "date5">8/2/22 <i class = "far fa-sun" id = "weatherIcon"></i></h3>
+          <h4 id = day5Temp>Temp:</h4>
+          <h4 id = day5Wind>Wind:</h4>
+          <h4 id = day5Humid>Humidity:</h4>
+
+        </div>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
     <script src="assets/js/script.js"></script>
