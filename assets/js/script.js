@@ -11,7 +11,6 @@ $("#currentDay").text(formattedCurrentDate);
 $("#searchButton").on("click", function() {
     // get city input
     var cityInput = document.getElementById('getCity').value;
-    console.log(cityInput);
 
     // receive API data for given city
     fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`)
@@ -37,6 +36,7 @@ $("#searchButton").on("click", function() {
                 // response if city is valid
                 } else {
                 // set name of the city and lat/lon data. Display forecast if previously hidden due to invalid input
+                localStorage.setItem("City", cityInput);
                 var cityName = data[0].name;
                 var cityLat = data[0].lat;
                 var cityLon = data[0].lon;
@@ -60,7 +60,6 @@ $("#searchButton").on("click", function() {
                                 var cityWind = data.current.wind_speed;
                                 var cityHumidity = data.current.humidity;
                                 var cityUV = data.current.uvi;
-                                console.log(data);
                                 $(".currentCity").text(cityName);
                                 $("#currentIcon").attr('src',`https://openweathermap.org/img/wn/${iconID}@2x.png`);
                                 $("#currentTemp").text("Temp: "+cityTemp+" °F");
@@ -158,8 +157,7 @@ $("#searchButton").on("click", function() {
         // add functionality to recent city buttons
         $(document).on("click",".searchRecent", function() {
             var cityButtonInput = $(this).text();
-            console.log(cityButtonInput);
-        
+            
         
             fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityButtonInput}&limit=1&appid=${apiKey}`)
                     .then(function (response) {
@@ -203,7 +201,6 @@ $("#searchButton").on("click", function() {
                                         var cityWind = data.current.wind_speed;
                                         var cityHumidity = data.current.humidity;
                                         var cityUV = data.current.uvi;
-                                        console.log(data);
                                         $(".currentCity").text(cityName);
                                         $("#currentIcon").attr('src',`https://openweathermap.org/img/wn/${iconID}@2x.png`);
                                         $("#currentTemp").text("Temp: "+cityTemp+" °F");
