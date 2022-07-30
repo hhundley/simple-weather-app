@@ -14,7 +14,7 @@ $("#searchButton").on("click", function() {
     console.log(cityInput);
 
     // receive API data for given city
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`)
             .then(function (response) {
                 return response.json();
             })
@@ -161,7 +161,7 @@ $("#searchButton").on("click", function() {
             console.log(cityButtonInput);
         
         
-            fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityButtonInput}&limit=1&appid=${apiKey}`)
+            fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityButtonInput}&limit=1&appid=${apiKey}`)
                     .then(function (response) {
                         return response.json();
                     })
