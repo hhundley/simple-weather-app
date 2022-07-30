@@ -62,7 +62,7 @@ $("#searchButton").on("click", function() {
                                 var cityUV = data.current.uvi;
                                 console.log(data);
                                 $(".currentCity").text(cityName);
-                                $("#currentIcon").attr('src',`http://openweathermap.org/img/wn/${iconID}@2x.png`);
+                                $("#currentIcon").attr('src',`https://openweathermap.org/img/wn/${iconID}@2x.png`);
                                 $("#currentTemp").text("Temp: "+cityTemp+" °F");
                                 $("#currentWind").text("Wind: "+cityWind+" mph");
                                 $("#currentHumidity").text("Humidity: "+cityHumidity+" %");
@@ -85,7 +85,7 @@ $("#searchButton").on("click", function() {
                                     var dateTime1 = DateTime.now().plus({days:1});
                                     var formattedCurrentDate1 = dateTime1.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                     $("#date1").text(formattedCurrentDate1);
-                                    $("#day1Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID1}@2x.png`);
+                                    $("#day1Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID1}@2x.png`);
                                     $("#day1Temp").text("Temp: "+futureTemp1+" °F");
                                     $("#day1Wind").text("Wind: "+futureWind1+" mph");
                                     $("#day1Humid").text("Humidity: "+futureHumidity1+" %");
@@ -98,7 +98,7 @@ $("#searchButton").on("click", function() {
                                     var dateTime2 = DateTime.now().plus({days:2});
                                     var formattedCurrentDate2 = dateTime2.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                     $("#date2").text(formattedCurrentDate2);
-                                    $("#day2Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID2}@2x.png`);
+                                    $("#day2Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID2}@2x.png`);
                                     $("#day2Temp").text("Temp: "+futureTemp2+" °F");
                                     $("#day2Wind").text("Wind: "+futureWind2+" mph");
                                     $("#day2Humid").text("Humidity: "+futureHumidity2+" %");
@@ -124,7 +124,7 @@ $("#searchButton").on("click", function() {
                                     var dateTime4 = DateTime.now().plus({days:4});
                                     var formattedCurrentDate4 = dateTime4.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                     $("#date4").text(formattedCurrentDate4);
-                                    $("#day4Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID4}@2x.png`);
+                                    $("#day4Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID4}@2x.png`);
                                     $("#day4Temp").text("Temp: "+futureTemp4+" °F");
                                     $("#day4Wind").text("Wind: "+futureWind4+" mph");
                                     $("#day4Humid").text("Humidity: "+futureHumidity4+" %");
@@ -137,7 +137,7 @@ $("#searchButton").on("click", function() {
                                     var dateTime5 = DateTime.now().plus({days:5});
                                     var formattedCurrentDate5 = dateTime5.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                     $("#date5").text(formattedCurrentDate5);
-                                    $("#day5Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID5}@2x.png`);
+                                    $("#day5Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID5}@2x.png`);
                                     $("#day5Temp").text("Temp: "+futureTemp5+" °F");
                                     $("#day5Wind").text("Wind: "+futureWind5+" mph");
                                     $("#day5Humid").text("Humidity: "+futureHumidity5+" %");
@@ -205,7 +205,7 @@ $("#searchButton").on("click", function() {
                                         var cityUV = data.current.uvi;
                                         console.log(data);
                                         $(".currentCity").text(cityName);
-                                        $("#currentIcon").attr('src',`http://openweathermap.org/img/wn/${iconID}@2x.png`);
+                                        $("#currentIcon").attr('src',`https://openweathermap.org/img/wn/${iconID}@2x.png`);
                                         $("#currentTemp").text("Temp: "+cityTemp+" °F");
                                         $("#currentWind").text("Wind: "+cityWind+" mph");
                                         $("#currentHumidity").text("Humidity: "+cityHumidity+" %");
@@ -228,7 +228,7 @@ $("#searchButton").on("click", function() {
                                             var dateTime1 = DateTime.now().plus({days:1});
                                             var formattedCurrentDate1 = dateTime1.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                             $("#date1").text(formattedCurrentDate1);
-                                            $("#day1Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID1}@2x.png`);
+                                            $("#day1Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID1}@2x.png`);
                                             $("#day1Temp").text("Temp: "+futureTemp1+" °F");
                                             $("#day1Wind").text("Wind: "+futureWind1+" mph");
                                             $("#day1Humid").text("Humidity: "+futureHumidity1+" %");
@@ -241,7 +241,7 @@ $("#searchButton").on("click", function() {
                                             var dateTime2 = DateTime.now().plus({days:2});
                                             var formattedCurrentDate2 = dateTime2.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                             $("#date2").text(formattedCurrentDate2);
-                                            $("#day2Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID2}@2x.png`);
+                                            $("#day2Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID2}@2x.png`);
                                             $("#day2Temp").text("Temp: "+futureTemp2+" °F");
                                             $("#day2Wind").text("Wind: "+futureWind2+" mph");
                                             $("#day2Humid").text("Humidity: "+futureHumidity2+" %");
@@ -254,7 +254,7 @@ $("#searchButton").on("click", function() {
                                             var dateTime3 = DateTime.now().plus({days:3});
                                             var formattedCurrentDate3 = dateTime3.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                             $("#date3").text(formattedCurrentDate3);
-                                            $("#day3Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID3}@2x.png`);
+                                            $("#day3Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID3}@2x.png`);
                                             $("#day3Temp").text("Temp: "+futureTemp3+" °F");
                                             $("#day3Wind").text("Wind: "+futureWind3+" mph");
                                             $("#day3Humid").text("Humidity: "+futureHumidity3+" %");
@@ -267,7 +267,7 @@ $("#searchButton").on("click", function() {
                                             var dateTime4 = DateTime.now().plus({days:4});
                                             var formattedCurrentDate4 = dateTime4.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                             $("#date4").text(formattedCurrentDate4);
-                                            $("#day4Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID4}@2x.png`);
+                                            $("#day4Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID4}@2x.png`);
                                             $("#day4Temp").text("Temp: "+futureTemp4+" °F");
                                             $("#day4Wind").text("Wind: "+futureWind4+" mph");
                                             $("#day4Humid").text("Humidity: "+futureHumidity4+" %");
@@ -280,7 +280,7 @@ $("#searchButton").on("click", function() {
                                             var dateTime5 = DateTime.now().plus({days:5});
                                             var formattedCurrentDate5 = dateTime5.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
                                             $("#date5").text(formattedCurrentDate5);
-                                            $("#day5Icon").attr('src',`http://openweathermap.org/img/wn/${futureIconID5}@2x.png`);
+                                            $("#day5Icon").attr('src',`https://openweathermap.org/img/wn/${futureIconID5}@2x.png`);
                                             $("#day5Temp").text("Temp: "+futureTemp5+" °F");
                                             $("#day5Wind").text("Wind: "+futureWind5+" mph");
                                             $("#day5Humid").text("Humidity: "+futureHumidity5+" %");
