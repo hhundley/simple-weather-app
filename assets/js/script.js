@@ -32,6 +32,7 @@ $("#searchButton").on("click", function() {
                     document.getElementById('day3').style.display = "none";
                     document.getElementById('day4').style.display = "none";
                     document.getElementById('day5').style.display = "none";
+                    document.getElementById('currentUV').style.backgroundColor = "transparent";
                     return 
                 // response if city is valid
                 } else {
