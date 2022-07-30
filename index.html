@@ -25,6 +25,7 @@
 
   <body>
 
+    <!-- Header deatiling current conditions -->
     <header class="jumbotron">
       <div class = "row currentInfo">
         <div class = "col-6">
@@ -43,7 +44,9 @@
       </div>
     </header>
 
+    <!-- Row for both search box and future forecast -->
     <div class = row search-and-forecast>
+      <!-- search section with search history -->
       <div class = "col-2 jumbotron searchArea">
         <input id = "getCity" type="text" placeholder="Enter a city">
         <button id = "searchButton">Search</button>
@@ -51,6 +54,7 @@
         <h2>Recents:</h2>
         <ul id = "buttonList"></ul>
       </div>
+      <!-- five-day forecast section -->
       <div class = "col-10 fiveDay">
         <div class = "container" id = "day1">
             <h3 id = "date1"></h3>

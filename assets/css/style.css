@@ -1,3 +1,4 @@
+/* Element Selectors */
 body {
     background-image: url("../Pictures/ken-cheung-KonWFWUaAuk-unsplash.jpg");
     background-size: cover;
@@ -8,14 +9,16 @@ h1 {
     color: white;
 }
 
-#searchButton {
+Button {
+    background-color: rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    margin-left: 0px;
+    color: white;
     display: block;
     border-radius: 5px;
     width: 100%;
     border-style: initial;
-    background-color: rgb(241, 106, 106);
     padding: 5px;
-    color:black;
 }
 
 input {
@@ -46,6 +49,7 @@ h4 {
     padding: 20px;
 }
 
+/* Class Selectors */
 .fiveDay {
     display: flex;
     flex-wrap: wrap;
@@ -59,16 +63,15 @@ h4 {
     border-radius: 5px;
 }
 
-Button {
-    background-color: rgba(0, 0, 0, 0.25);
-    margin: 10px;
-    margin-left: 0px;
-    color: white;
+
+#searchButton {
     display: block;
     border-radius: 5px;
     width: 100%;
     border-style: initial;
+    background-color: rgb(241, 106, 106);
     padding: 5px;
+    color:black;
 }
 
 .jumbotron {

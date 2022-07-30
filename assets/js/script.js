@@ -7,16 +7,19 @@ var dateTime = DateTime.now();
 var formattedCurrentDate = dateTime.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
 $("#currentDay").text(formattedCurrentDate);
 
-//Function for obtaining city name when search button is clicked
+//Function for searching city and receiving/displaying weather data
 $("#searchButton").on("click", function() {
+    // get city input
     var cityInput = document.getElementById('getCity').value;
     console.log(cityInput);
 
+    // receive API data for given city
     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`)
             .then(function (response) {
                 return response.json();
             })
             .then(function (data) {
+                // response if city is invalid
                 if(data.length ===0) { 
                     $(".currentCity").text("Please enter a valid city");
                     $("#currentTemp").text("");
@@ -31,7 +34,9 @@ $("#searchButton").on("click", function() {
                     document.getElementById('day4').style.display = "none";
                     document.getElementById('day5').style.display = "none";
                     return 
+                // response if city is valid
                 } else {
+                // set name of the city and lat/lon data. Display forecast if previously hidden due to invalid input
                 var cityName = data[0].name;
                 var cityLat = data[0].lat;
                 var cityLon = data[0].lon;
@@ -42,6 +47,7 @@ $("#searchButton").on("click", function() {
                 document.getElementById('day4').style.display = "block";
                 document.getElementById('day5').style.display = "block";
 
+                // funtion for getting API weather data
                 function weatherDataPull () {
                         fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=hourly,minutely&units=imperial&appid=${apiKey}`)
                             .then(function (response) {
@@ -149,6 +155,7 @@ $("#searchButton").on("click", function() {
         
                 }})
             });
+        // add functionality to recent city buttons
         $(document).on("click",".searchRecent", function() {
             var cityButtonInput = $(this).text();
             console.log(cityButtonInput);
