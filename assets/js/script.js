@@ -9,6 +9,16 @@ $("#currentDay").text(formattedCurrentDate);
 
 //Function for searching city and receiving/displaying weather data
 $("#searchButton").on("click", function() {
+    // show recents and containers
+    var fiveDays = document.getElementsByClassName("fiveDay");
+    var recents = document.getElementsByTagName("h2");
+
+    for ( const recent of recents) {
+    recent.style.display = 'block';
+    };
+    for (const fiveDay of fiveDays) {
+        fiveDay.style.display = 'flex';
+      };
     // get city input
     var cityInput = document.getElementById('getCity').value;
 
